@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The digital workspace of akshayaakkuz. Explore public projects, experiments, and open-source work.">
+  <meta name="theme-color" content="#111312">
+  <title>akshayaakkuz — Digital workspace</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111312;--panel:#191c19;--ink:#f2f5eb;--muted:#a7afa4;--line:#343a32;--accent:#c3f778}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:6px}.wrap{max-width:1200px;padding:0 40px;margin:auto}.skip{position:absolute;top:-100px;background:var(--accent);color:#111;padding:12px}.skip:focus{top:8px;z-index:3}header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}.brand{font-weight:700;letter-spacing:-.04em;font-size:20px}.brand span{color:var(--accent)}nav{display:flex;gap:30px;font-size:14px}nav a:hover{color:var(--accent)}.hero{padding:90px 0 76px;display:grid;grid-template-columns:1.6fr 1fr;gap:65px;align-items:center}.eyebrow{font:12px/1.6 monospace;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);margin:0 0 22px}h1{font-size:clamp(56px,7.4vw,94px);line-height:1.01;letter-spacing:-.075em;font-weight:500;margin:0 0 28px}h1 em{color:var(--accent);font-style:normal}.intro{font-size:18px;max-width:460px;color:var(--muted);margin-bottom:32px}.actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;gap:24px;align-items:center;justify-content:center;border:1px solid var(--line);padding:13px 21px;border-radius:6px;font-size:14px;transition:transform .2s,background .2s}.button:hover{transform:translateY(-3px);background:var(--panel)}.primary{background:var(--accent);color:#16210d;border-color:var(--accent);font-weight:bold}.primary:hover{background:#d5ffa0}.identity{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transform:rotate(3deg)}.card-top{display:flex;justify-content:space-between;padding:16px 22px;border-bottom:1px solid var(--line);font:12px monospace;color:var(--muted)}.identity-main{padding:32px}.monogram{width:90px;height:90px;border:1px solid #657f43;border-radius:50%;display:grid;place-items:center;background:#26331d;color:var(--accent);font:36px monospace;margin-bottom:30px}.handle{font-size:clamp(19px,2vw,25px);letter-spacing:-.035em;margin:0;overflow-wrap:anywhere}.card-label{font:12px monospace;color:var(--muted);margin:8px 0 25px}.code{font:14px/1.9 monospace;color:#bcc6b7;margin:0;white-space:pre-wrap}.code span{color:var(--accent)}.card-bottom{padding:14px 22px;border-top:1px solid var(--line);font:12px monospace;display:flex;justify-content:space-between;color:var(--muted)}.strip{border-block:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;padding:19px 0;font:12px monospace;color:var(--muted);letter-spacing:.05em}.strip span:first-child{color:var(--accent)}section{padding:65px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}h2{font-size:38px;line-height:1.15;letter-spacing:-.05em;font-weight:500;margin:0}.section-head .eyebrow{margin-bottom:12px}.text-link{font-size:14px;color:var(--muted);white-space:nowrap}.text-link:hover{color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border:1px solid var(--line);border-radius:8px;padding:25px;min-height:250px;display:flex;flex-direction:column;background:var(--panel);transition:border-color .2s,transform .2s}.project:hover{border-color:#83a352;transform:translateY(-4px)}.project-top{display:flex;justify-content:space-between;color:var(--accent);font:13px monospace;margin-bottom:35px}.project h3{font-size:21px;letter-spacing:-.03em;line-height:1.3;margin:0 0 12px;overflow-wrap:anywhere}.project p{color:var(--muted);font-size:14px;margin:0 0 26px}.project-meta{display:flex;gap:15px;justify-content:space-between;font:12px monospace;color:var(--muted);margin-top:auto}.status{grid-column:1/-1;border:1px solid var(--line);padding:30px;border-radius:8px;color:var(--muted)}.status a{text-decoration:underline;color:var(--accent)}.about{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.3fr;gap:60px}.about p{font-size:22px;color:var(--muted);margin:0;line-height:1.65}.about strong{font-weight:400;color:var(--ink)}footer{border-top:1px solid var(--line);padding:25px 0 35px;display:flex;justify-content:space-between;gap:20px;font:12px monospace;color:var(--muted)}footer a{color:var(--accent)}@media(max-width:850px){.hero{gap:35px;grid-template-columns:1.25fr 1fr}.identity-main{padding:24px}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.wrap{padding:0 22px}header{padding:22px 0}nav{gap:18px}.brand{font-size:17px}.hero{grid-template-columns:1fr;padding:55px 0;gap:45px}h1{font-size:64px}.identity{max-width:360px;width:calc(100% - 12px);justify-self:center;transform:rotate(2deg)}.strip{flex-wrap:wrap;font-size:11px}.strip span:last-child{display:none}.grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}section{padding:45px 0}.about{grid-template-columns:1fr;gap:24px}.about p{font-size:19px}footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header><a class="brand" href="./">akshayaakkuz<span> /</span></a><nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="https://github.com/akshayaakkuz">GitHub ↗</a></nav></header>
+    <main id="main">
+      <div class="hero">
+        <div><p class="eyebrow">A personal corner of the internet</p><h1>Small ideas.<br><em>Real things.</em></h1><p class="intro">A home for my code, experiments, and whatever comes next. Take a look around.</p><div class="actions"><a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a><a class="button" href="https://github.com/akshayaakkuz">My GitHub <span aria-hidden="true">↗</span></a></div></div>
+        <aside class="identity" aria-label="GitHub profile card"><div class="card-top"><span>profile / 001</span><span>↗</span></div><div class="identity-main"><div class="monogram" aria-hidden="true">a/</div><h2 class="handle">@akshayaakkuz</h2><p class="card-label">MY DIGITAL WORKSPACE</p><pre class="code"><span>const</span> nextIdea = {
+  start: <span>"something small"</span>,
+  make: <span>"something useful"</span>,
+  repeat: <span>true</span>
+};</pre></div><div class="card-bottom"><span>Code. Learn. Repeat.</span><span>⌘</span></div></aside>
+      </div>
+      <div class="strip"><span>INDEPENDENT EXPLORATION</span><span>IDEAS → EXPERIMENTS → PROJECTS</span><span>ALWAYS A WORK IN PROGRESS</span></div>
+      <section id="projects" aria-labelledby="projects-title"><div class="section-head"><div><p class="eyebrow">01 / Out in the open</p><h2 id="projects-title">The project shelf.</h2></div><a class="text-link" href="https://github.com/akshayaakkuz?tab=repositories">All repositories ↗</a></div><div class="grid" id="repositories" aria-live="polite"><div class="status">Loading public projects… You can also <a href="https://github.com/akshayaakkuz?tab=repositories">browse them on GitHub</a>.</div></div><noscript><p>JavaScript is off. <a href="https://github.com/akshayaakkuz?tab=repositories">See all public projects on GitHub →</a></p></noscript></section>
+      <section class="about" id="about" aria-labelledby="about-title"><div><p class="eyebrow">02 / Behind the screen</p><h2 id="about-title">Room to explore.</h2></div><p>This is my little workspace on the web. <strong>A place to collect what I make and share what I’m exploring.</strong> For the latest code and updates, you’ll find me on GitHub.</p></section>
+    </main>
+    <footer><span>© <span id="year">2026</span> akshayaakkuz</span><span>Made for the open web.</span><a href="https://github.com/akshayaakkuz">Find me on GitHub ↗</a></footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const shelf = document.getElementById('repositories');
+    function showStatus(message) {
+      const box = document.createElement('div'); box.className = 'status';
+      box.append(document.createTextNode(message + ' '));
+      const link = document.createElement('a'); link.href = 'https://github.com/akshayaakkuz?tab=repositories'; link.textContent = 'Browse repositories on GitHub →'; box.append(link); shelf.replaceChildren(box);
+    }
+    async function loadProjects() {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 10000);
+      try {
+        const response = await fetch('https://api.github.com/users/akshayaakkuz/repos?sort=updated&per_page=100', {signal: controller.signal});
+        if (!response.ok) throw new Error('GitHub unavailable');
+        const data = await response.json();
+        if (!Array.isArray(data)) throw new Error('Unexpected response');
+        const projects = data.filter(repo => !repo.fork && !repo.archived).slice(0, 6);
+        if (!projects.length) { showStatus('New projects will appear here as they are published.'); return; }
+        const cards = projects.map((repo, index) => {
+          const card = document.createElement('a'); card.className = 'project';
+          card.href = 'https://github.com/akshayaakkuz/' + encodeURIComponent(repo.name);
+          const top = document.createElement('div'); top.className = 'project-top'; top.textContent = String(index + 1).padStart(2, '0') + ' / REPOSITORY';
+          const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); top.append(arrow);
+          const title = document.createElement('h3'); title.textContent = repo.name;
+          const description = document.createElement('p'); description.textContent = repo.description || 'Explore the code and follow this project on GitHub.';
+          const meta = document.createElement('div'); meta.className = 'project-meta';
+          const language = document.createElement('span'); language.textContent = repo.language || 'Repository';
+          const stars = document.createElement('span'); stars.textContent = '☆ ' + repo.stargazers_count + ' stars'; meta.append(language, stars);
+          card.append(top, title, description, meta); return card;
+        });
+        shelf.replaceChildren(...cards);
+      } catch { showStatus('The project feed is taking a break. The code is still on GitHub.'); }
+      finally { clearTimeout(timeout); }
+    }
+    loadProjects();
+  </script>
+</body>
+</html>
+
