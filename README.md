@@ -10,6 +10,7 @@ A personal portfolio and a practical spam-message detector, published with GitHu
 | --- | --- | --- |
 | Personal portfolio | Responsive introduction and public GitHub repository feed | [index.html](index.html) |
 | Signal | Checks English messages against explainable weighted spam rules, locally in the browser | [spam-check/](spam-check/) |
+| Signal Security Lab | Python/Django companion with private scan metadata, authorization regression tests and CI security gates | [secure-signal/](secure-signal/) |
 
 ## Run locally
 
@@ -38,5 +39,7 @@ The functional checks cover normal messages, suspicious combinations, Unicode no
 Signal is a rule-based English-language baseline, not a trained model. It can miss spam and flag legitimate messages. It does not inspect URLs or authenticate senders. See the [detector documentation](spam-check/README.md) for scoring details.
 
 ## Deployment
+
+The Python companion is a local learning application; it does not run on GitHub Pages. See its [setup guide](secure-signal/README.md) and [interview exercises](secure-signal/INTERVIEW.md). The privacy statements above describe the original browser-only app; the Python companion processes submitted text on its local server.
 
 GitHub Pages publishes the `main` branch from the repository root. The portfolio lives at `/` and Signal at `/spam-check/`.
