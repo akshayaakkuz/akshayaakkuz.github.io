@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<p class="eyebrow">Private by design</p><h1>Your scans. Your workspace.</h1><p class="muted">Sign in with an account created locally using the setup guide.</p><section class="card"><form method="post">{% csrf_token %}{{ form.as_p }}<button>Sign in</button></form></section>{% endblock %}
